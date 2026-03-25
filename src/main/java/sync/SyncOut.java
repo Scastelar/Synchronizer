@@ -41,7 +41,9 @@ public class SyncOut {
         } catch (SQLException e) {
             logger.accept("error de conexion: " + e.getMessage());
             result.status = SyncResult.STATUS_ERROR;
-        } 
+        } finally {
+            DatabaseConfig.close(master,slave);
+        }
         
         result.finish();
         SyncHistory.save(result);
@@ -123,7 +125,7 @@ public class SyncOut {
     }
     
     //aplicar delete al master
-    public static void applyDelete(OutTableDef def, ResultSet rs, Connection master) throws SQLException {
+    private static void applyDelete(OutTableDef def, ResultSet rs, Connection master) throws SQLException {
         String sql = "DELETE FROM \"" + def.masterTable + "\" WHERE \"" + def.pkCol + "\" = ?";
          try (PreparedStatement ps = master.prepareStatement(sql)) {
             ps.setObject(1, rs.getObject(def.pkCol));
@@ -146,7 +148,7 @@ public class SyncOut {
     }
     
     private static String buildPgUpsert(String table, String[]cols, String pk){
-        StringBuilder sb= new StringBuilder("INSERTO INTO \"").append(table).append("\" (");
+        StringBuilder sb= new StringBuilder("INSERT INTO \"").append(table).append("\" (");
         
         for (int i = 0; i< cols.length; i++){
             if(i>0) sb.append(", ");

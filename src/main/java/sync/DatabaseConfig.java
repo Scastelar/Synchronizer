@@ -6,13 +6,13 @@ import java.sql.SQLException;
 
 public class DatabaseConfig {
     // MASTER Postgresql con pagila
-    private static final String MASTER_URL = "";
+    private static final String MASTER_URL = "jdbc:postgresql://localhost:5432/pagila";
     private static final String MASTER_USER = "postgres";
     private static final String MASTER_PASS = "admin123";
             
     
     // SLAVE mariaDB
-    private static final String SLAVE_URL = "";
+    private static final String SLAVE_URL = "jdbc:mariadb://localhost:3306/pagila_slave?characterEncoding=utf8mb4";
     private static final String SLAVE_USER = "root";
     private static final String SLAVE_PASS = "sofia123";
     
@@ -23,4 +23,15 @@ public class DatabaseConfig {
     public static Connection getSlaveConnection() throws SQLException {
         return DriverManager.getConnection(SLAVE_URL, SLAVE_USER,SLAVE_PASS);
     }
+    
+    public static void close(AutoCloseable... resources){
+        for (AutoCloseable r: resources){
+            if (r!=null){
+                try { 
+                    r.close();
+                } catch (Exception ignored){}
+            }
+        }
+    }
 }
+

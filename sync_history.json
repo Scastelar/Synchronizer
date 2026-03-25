@@ -1,0 +1,42 @@
+[
+  {
+    "type": "SYNC-IN",
+    "startedAt": "25/03/2026 15:10:22",
+    "finishedAt": "25/03/2026 15:10:22",
+    "status": "ERROR",
+    "totalErrors": 0,
+    "tables": []
+  },
+  {
+    "type": "SYNC-OUT",
+    "startedAt": "25/03/2026 15:10:19",
+    "finishedAt": "25/03/2026 15:10:19",
+    "status": "ERROR",
+    "totalErrors": 0,
+    "tables": []
+  },
+  {
+    "type": "SYNC-IN",
+    "startedAt": "25/03/2026 14:59:48",
+    "finishedAt": "25/03/2026 14:59:48",
+    "status": "ERROR",
+    "totalErrors": 0,
+    "tables": []
+  },
+  {
+    "type": "SYNC-OUT",
+    "startedAt": "25/03/2026 14:59:38",
+    "finishedAt": "25/03/2026 14:59:38",
+    "status": "ERROR",
+    "totalErrors": 0,
+    "tables": []
+  },
+  {
+    "type": "SYNC-IN",
+    "startedAt": "25/03/2026 14:59:28",
+    "finishedAt": "25/03/2026 14:59:28",
+    "status": "ERROR",
+    "totalErrors": 0,
+    "tables": []
+  }
+]

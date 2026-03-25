@@ -19,7 +19,7 @@ public class SyncIn {
         new TableDef("category", "category",new String[]{"category_id","name","last_update"}),
         new TableDef("city", "city",new String[]{"city_id","city","country_id","last_update"}),
         new TableDef("address", "address",new String[]{"address_id","address","address2","district","city_id","postal_code","phone","last_update"}),
-        new TableDef("film", "film",new String[]{"film_id","title","descripton","release_year","language_id","rental_duration","rental_rate","length","replacement_cost","rating","last_update"}),
+        new TableDef("film", "film",new String[]{"film_id","title","description","release_year","language_id","original_language_id","rental_duration","rental_rate","length","replacement_cost","rating","last_update","special_features"}),
         new TableDef("film_actor", "film_actor",new String[]{"actor_id","film_id","last_update"}),
         new TableDef("film_category", "film_category",new String[]{"film_id","category_id","last_update"}),
         new TableDef("inventory", "inventory",new String[]{"inventory_id","film_id","store_id","last_update"}),
@@ -47,7 +47,9 @@ public class SyncIn {
         }catch (SQLException e){
             logger.accept("Error de conexion:" + e.getMessage());
             result.status = SyncResult.STATUS_ERROR;
-        } 
+        } finally {
+            DatabaseConfig.close(master,slave);
+        }
         
         
         result.finish();
