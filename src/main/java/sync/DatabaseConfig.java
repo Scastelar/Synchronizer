@@ -6,9 +6,9 @@ import java.sql.SQLException;
 
 public class DatabaseConfig {
     // MASTER Postgresql con pagila
-    private static final String MASTER_URL = "jdbc:postgresql://localhost:5432/pagila";
+    private static final String MASTER_URL = "jdbc:postgresql://localhost:1722/pagila";
     private static final String MASTER_USER = "postgres";
-    private static final String MASTER_PASS = "admin123";
+    private static final String MASTER_PASS = "clave123";
             
     
     // SLAVE mariaDB

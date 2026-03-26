@@ -1,42 +1,340 @@
 [
   {
-    "type": "SYNC-IN",
-    "startedAt": "25/03/2026 15:10:22",
-    "finishedAt": "25/03/2026 15:10:22",
-    "status": "ERROR",
+    "type": "SYNC-OUT",
+    "startedAt": "25/03/2026 19:26:55",
+    "finishedAt": "25/03/2026 19:26:56",
+    "status": "OK",
     "totalErrors": 0,
-    "tables": []
+    "tables": [
+      {
+        "tableName": "customer",
+        "rows": 0,
+        "status": "OK"
+      },
+      {
+        "tableName": "rental",
+        "rows": 0,
+        "status": "OK"
+      },
+      {
+        "tableName": "payment",
+        "rows": 0,
+        "status": "OK"
+      }
+    ]
+  },
+  {
+    "type": "SYNC-IN",
+    "startedAt": "25/03/2026 19:26:49",
+    "finishedAt": "25/03/2026 19:26:52",
+    "status": "OK",
+    "totalErrors": 0,
+    "tables": [
+      {
+        "tableName": "store",
+        "rows": 500,
+        "status": "OK"
+      },
+      {
+        "tableName": "staff",
+        "rows": 1500,
+        "status": "OK"
+      },
+      {
+        "tableName": "language",
+        "rows": 6,
+        "status": "OK"
+      },
+      {
+        "tableName": "country",
+        "rows": 109,
+        "status": "OK"
+      },
+      {
+        "tableName": "actor",
+        "rows": 200,
+        "status": "OK"
+      },
+      {
+        "tableName": "category",
+        "rows": 16,
+        "status": "OK"
+      },
+      {
+        "tableName": "city",
+        "rows": 600,
+        "status": "OK"
+      },
+      {
+        "tableName": "address",
+        "rows": 603,
+        "status": "OK"
+      },
+      {
+        "tableName": "film",
+        "rows": 1000,
+        "status": "OK"
+      },
+      {
+        "tableName": "film_actor",
+        "rows": 5462,
+        "status": "OK"
+      },
+      {
+        "tableName": "film_category",
+        "rows": 2367,
+        "status": "OK"
+      },
+      {
+        "tableName": "inventory",
+        "rows": 4581,
+        "status": "OK"
+      }
+    ]
+  },
+  {
+    "type": "SYNC-IN",
+    "startedAt": "25/03/2026 17:54:46",
+    "finishedAt": "25/03/2026 17:54:51",
+    "status": "OK",
+    "totalErrors": 0,
+    "tables": [
+      {
+        "tableName": "store",
+        "rows": 500,
+        "status": "OK"
+      },
+      {
+        "tableName": "staff",
+        "rows": 1500,
+        "status": "OK"
+      },
+      {
+        "tableName": "language",
+        "rows": 6,
+        "status": "OK"
+      },
+      {
+        "tableName": "country",
+        "rows": 109,
+        "status": "OK"
+      },
+      {
+        "tableName": "actor",
+        "rows": 200,
+        "status": "OK"
+      },
+      {
+        "tableName": "category",
+        "rows": 16,
+        "status": "OK"
+      },
+      {
+        "tableName": "city",
+        "rows": 600,
+        "status": "OK"
+      },
+      {
+        "tableName": "address",
+        "rows": 603,
+        "status": "OK"
+      },
+      {
+        "tableName": "film",
+        "rows": 1000,
+        "status": "OK"
+      },
+      {
+        "tableName": "film_actor",
+        "rows": 5462,
+        "status": "OK"
+      },
+      {
+        "tableName": "film_category",
+        "rows": 2367,
+        "status": "OK"
+      },
+      {
+        "tableName": "inventory",
+        "rows": 4581,
+        "status": "OK"
+      }
+    ]
+  },
+  {
+    "type": "SYNC-IN",
+    "startedAt": "25/03/2026 17:39:28",
+    "finishedAt": "25/03/2026 17:39:33",
+    "status": "PARCIAL",
+    "totalErrors": 2,
+    "tables": [
+      {
+        "tableName": "store",
+        "rows": 500,
+        "status": "ERROR",
+        "errorDetail": "(conn\u003d31) Data too long for column \u0027username\u0027 at row 1"
+      },
+      {
+        "tableName": "staff",
+        "rows": 0,
+        "status": "ERROR",
+        "errorDetail": "(conn\u003d31) Data too long for column \u0027username\u0027 at row 1"
+      },
+      {
+        "tableName": "language",
+        "rows": 6,
+        "status": "OK"
+      },
+      {
+        "tableName": "country",
+        "rows": 109,
+        "status": "OK"
+      },
+      {
+        "tableName": "actor",
+        "rows": 200,
+        "status": "OK"
+      },
+      {
+        "tableName": "category",
+        "rows": 16,
+        "status": "OK"
+      },
+      {
+        "tableName": "city",
+        "rows": 600,
+        "status": "OK"
+      },
+      {
+        "tableName": "address",
+        "rows": 603,
+        "status": "OK"
+      },
+      {
+        "tableName": "film",
+        "rows": 1000,
+        "status": "OK"
+      },
+      {
+        "tableName": "film_actor",
+        "rows": 5462,
+        "status": "OK"
+      },
+      {
+        "tableName": "film_category",
+        "rows": 2367,
+        "status": "OK"
+      },
+      {
+        "tableName": "inventory",
+        "rows": 4581,
+        "status": "OK"
+      }
+    ]
+  },
+  {
+    "type": "SYNC-IN",
+    "startedAt": "25/03/2026 17:24:19",
+    "finishedAt": "25/03/2026 17:24:19",
+    "status": "PARCIAL",
+    "totalErrors": 12,
+    "tables": [
+      {
+        "tableName": "store",
+        "rows": 0,
+        "status": "ERROR",
+        "errorDetail": "ERROR: relation \"store\" does not exist\n  Position: 73"
+      },
+      {
+        "tableName": "staff",
+        "rows": 0,
+        "status": "ERROR",
+        "errorDetail": "ERROR: relation \"store\" does not exist\n  Position: 73"
+      },
+      {
+        "tableName": "language",
+        "rows": 0,
+        "status": "ERROR",
+        "errorDetail": "ERROR: relation \"language\" does not exist\n  Position: 50"
+      },
+      {
+        "tableName": "country",
+        "rows": 0,
+        "status": "ERROR",
+        "errorDetail": "ERROR: relation \"country\" does not exist\n  Position: 52"
+      },
+      {
+        "tableName": "actor",
+        "rows": 0,
+        "status": "ERROR",
+        "errorDetail": "ERROR: relation \"actor\" does not exist\n  Position: 66"
+      },
+      {
+        "tableName": "category",
+        "rows": 0,
+        "status": "ERROR",
+        "errorDetail": "ERROR: relation \"category\" does not exist\n  Position: 50"
+      },
+      {
+        "tableName": "city",
+        "rows": 0,
+        "status": "ERROR",
+        "errorDetail": "ERROR: relation \"city\" does not exist\n  Position: 60"
+      },
+      {
+        "tableName": "address",
+        "rows": 0,
+        "status": "ERROR",
+        "errorDetail": "ERROR: relation \"address\" does not exist\n  Position: 111"
+      },
+      {
+        "tableName": "film",
+        "rows": 0,
+        "status": "ERROR",
+        "errorDetail": "ERROR: relation \"film\" does not exist\n  Position: 211"
+      },
+      {
+        "tableName": "film_actor",
+        "rows": 0,
+        "status": "ERROR",
+        "errorDetail": "ERROR: relation \"film_actor\" does not exist\n  Position: 50"
+      },
+      {
+        "tableName": "film_category",
+        "rows": 0,
+        "status": "ERROR",
+        "errorDetail": "ERROR: relation \"film_category\" does not exist\n  Position: 53"
+      },
+      {
+        "tableName": "inventory",
+        "rows": 0,
+        "status": "ERROR",
+        "errorDetail": "ERROR: relation \"inventory\" does not exist\n  Position: 66"
+      }
+    ]
   },
   {
     "type": "SYNC-OUT",
-    "startedAt": "25/03/2026 15:10:19",
-    "finishedAt": "25/03/2026 15:10:19",
-    "status": "ERROR",
+    "startedAt": "25/03/2026 17:24:16",
+    "finishedAt": "25/03/2026 17:24:17",
+    "status": "OK",
     "totalErrors": 0,
-    "tables": []
-  },
-  {
-    "type": "SYNC-IN",
-    "startedAt": "25/03/2026 14:59:48",
-    "finishedAt": "25/03/2026 14:59:48",
-    "status": "ERROR",
-    "totalErrors": 0,
-    "tables": []
-  },
-  {
-    "type": "SYNC-OUT",
-    "startedAt": "25/03/2026 14:59:38",
-    "finishedAt": "25/03/2026 14:59:38",
-    "status": "ERROR",
-    "totalErrors": 0,
-    "tables": []
-  },
-  {
-    "type": "SYNC-IN",
-    "startedAt": "25/03/2026 14:59:28",
-    "finishedAt": "25/03/2026 14:59:28",
-    "status": "ERROR",
-    "totalErrors": 0,
-    "tables": []
+    "tables": [
+      {
+        "tableName": "customer",
+        "rows": 0,
+        "status": "OK"
+      },
+      {
+        "tableName": "rental",
+        "rows": 0,
+        "status": "OK"
+      },
+      {
+        "tableName": "payment",
+        "rows": 0,
+        "status": "OK"
+      }
+    ]
   }
 ]
